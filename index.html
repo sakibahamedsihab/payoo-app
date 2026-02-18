@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Payoo</title>
+
+  </head>
+  <body class="min-h-screen max-w-[360px] mx-auto bg-base-200 overflow-hidden">
+       <div class="logo w-[200px] mx-auto pt-32">
+          <img src="./assets/Logo-full.png" alt="">
+       </div>
+       <div class="bg-white m-8 p-5 rounded-xl">
+          <form class="space-y-5">
+              <div id="input-group" class="space-y-5">
+                  <label for="mobile">Mobile Number</label>
+                  <input type="text" value="01234567890" id="mobile" placeholder="Enter Mobile Number" class="outline-blue-500 border-none bg-base-200 rounded-full px-5 py-2 w-full mt-3">
+
+                  <label for="pin">4 Digit Pin</label>
+                  <input type="text" id="pin" placeholder="Enter Mobile Number" class="outline-blue-500 border-none bg-base-200 rounded-full px-5 py-2 w-full mt-3">
+              </div>
+
+              <button id="login-btn" class="w-full py-2 bg-[#3B25C1] rounded-full text-white font-semibold" >Login</button>
+          </form>
+       </div>
+
+       <script src="./src/login.js"></script>
+  </body>
+</html>

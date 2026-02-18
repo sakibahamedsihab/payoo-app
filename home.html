@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Payoo</title>
+
+  </head>
+  <body class="min-h-screen max-w-[480px] mx-auto bg-base-200 overflow-hidden">
+        <header class="flex justify-between py-6 px-5 border-b border-gray-300 shadow-2xs">
+            <div class="flex gap-4">
+                <div class="w-[60px]"><img src="./assets/logo.png" alt=""></div>
+                <span>
+                    <h3 class="text-[18px] font-extrabold">$43500</h3>
+                    <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Availabel Balance</p>
+                </span>
+            </div>
+
+            <button class="btn">Logout</button>
+        </header>
+
+        <main>
+            <section id="welcome" class="mx-6 mt-4">
+                <h1 class="text-[24px] font-bold text-[#080808]">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
+                <p class="text-[16px] text-[rgba(8,8,8,0.5)]">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+            </section>
+
+            <section id="card" class="mx-6 mt-4">
+                <div id="card-container" class="grid grid-cols-3 items-center justify-center gap-3">
+                    <!-- CARD-1 -->
+                    <div id="card" class="py-5 px-6 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <img src="./assets/opt-1.png" alt="">
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Add Money</p>
+                    </div>
+                    <!-- CARD-2 -->
+                    <div id="card" class="py-5 px-6 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <span><img src="./assets/opt-2.png" alt=""></span>
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]" >Cashout</p>
+                    </div>
+                    <!-- CARD-3 -->
+                    <div id="card" class="py-5 px-3 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <span><img src="./assets/opt-3.png" alt=""></span>
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Transfer Money</p>
+                    </div>
+                    <!-- CARD-4 -->
+                    <div id="card" class="py-5 px-6 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <span><img src="./assets/opt-4.png" alt=""></span>
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Get Bonus</p>
+                    </div>
+                    <!-- CARD-5 -->
+                    <div id="card" class="py-5 px-6 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <span><img src="./assets/opt-5.png" alt=""></span>
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Pay Bill</p>
+                    </div>
+                    <!-- CARD-6 -->
+                    <div id="card" class="py-5 px-6 border border-gray-200 rounded-lg flex flex-col justify-center items-center">
+                        <span><img src="./assets/opt-6.png" alt=""></span>
+                        <p class="text-[14px] text-[rgba(8,8,8,0.5)]">Transanctions</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+  </body>
+</html>
