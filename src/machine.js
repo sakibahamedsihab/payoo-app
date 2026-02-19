@@ -11,3 +11,12 @@ function getBalance(){
 function setBalance(amount) {
     document.getElementById('account-balance').textContent = `${amount}`
 }
+
+function showSection(idToShow) {
+    const sections = ['Add-money', 'cashout'];
+    sections.forEach((id) => {
+        document.getElementById(id).classList.add('hidden');
+    })
+
+    document.getElementById(idToShow).classList.remove('hidden')
+}
