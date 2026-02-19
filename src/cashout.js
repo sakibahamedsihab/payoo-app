@@ -1,37 +1,34 @@
-const agentNumberEl = document.getElementById('agent-number');
-const cashoutAmountEl = document.getElementById('cashout-amount');
-const cashoutPinEl = document.getElementById('cashout-pin');
-const accountBalanceEl = document.getElementById('account-balance');
-const cashoutFormEl = document.getElementById('cashout-form');
-
 const cashoutBtnEl = document.getElementById('cashout-btn');
 
 cashoutBtnEl.addEventListener('click', function(event){
     event.preventDefault();
 
-    const agentNumber = agentNumberEl.value;
+    const agentNumber = getValueFromInputAsString('agent-number');
     if(agentNumber.length !== 11) {
+        console.log(agentNumber)
         alert('Invalid Number!');
         return;
     }
 
-    const cashoutAmount = Number(cashoutAmountEl.value);
-    const currentBalance = Number(accountBalanceEl.textContent);
+    const cashoutAmount = getValueFromInputAsNumber('cashout-amount')
+    const currentBalance = getBalance();
     const newBalance = currentBalance - cashoutAmount;
 
 
 
-    const cashoutPinNumber = cashoutPinEl.value;
-    if(cashoutPinNumber === '1234') {
+    const cashoutPinNumber = getValueFromInputAsNumber('cashout-pin');
+    if(cashoutPinNumber === 1234) {
         if(currentBalance < cashoutAmount) {
             alert('Insufficient Balance!')
             return;
         }
 
         alert('Withdraw succeed');
-        accountBalanceEl.textContent = `${newBalance}`
+        setBalance(newBalance)
         cashoutFormEl.reset();
     } else {
+        console.log(cashoutPinNumber)
+        console.log(typeof cashoutPinNumber)
         alert('Invalid Pin Number!')
         return;
     }
