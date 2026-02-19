@@ -13,7 +13,7 @@ function setBalance(amount) {
 }
 
 function showSection(idToShow) {
-    const sections = ['Add-money', 'cashout'];
+    const sections = ['Add-money', 'cashout', 'payment'];
     sections.forEach((id) => {
         document.getElementById(id).classList.add('hidden');
     })
